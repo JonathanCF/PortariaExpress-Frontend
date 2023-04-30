@@ -82,7 +82,7 @@ export default function Cadastro({ empresaList }) {
       })
       .then((response) => {
         toast.success("Cadastro realizado");
-        Router.push("/registro");
+        Router.push("/dashboard");
       })
       .catch((error) => {
         toast.error(error.response.data.err);
