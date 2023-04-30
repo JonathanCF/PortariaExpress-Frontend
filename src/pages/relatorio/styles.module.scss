@@ -1,0 +1,115 @@
+.container {
+  max-width: 100%;
+  margin: 4rem auto;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .tabelaMenu{
+    
+		background-color: #D3d3d3;
+    font-weight: bold;
+	}
+}
+
+.container h1 {
+  color: var(--white);
+}
+
+.labelDates {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.input {
+  height: 40px;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  margin: 0.5rem 0.5rem;
+  color: var(--white);
+  background-color: var(--dark-900);
+  border: 1px solid var(--gray-100);
+  padding: 0 0.5rem;
+
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+    
+}
+
+}
+
+.buttonAdd {
+  padding: 0 1rem;
+  border-radius: 0.3rem;
+  height: 40px;
+  border: 0;
+  background-color: var(--green-900);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--dark-700);
+  margin-left: 4rem;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.tableLinha {
+  &:hover {
+    background-color: #7d87f2;
+  }
+
+  .buttonTable {
+    border: 0;
+    background-color: transparent;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}
+
+.boxModal{
+  width: 300px;
+  h1{
+    font-size: 30px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .buttonNao{
+    font-weight: bold;
+    border: 0;
+    padding: 0 1rem;
+    height: 30px;
+    border-radius: 0.3rem;
+    background-color: var(--red-900);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .buttonSim {
+    font-weight: bold;
+    border: 0;
+    padding: 0 1rem;
+    height: 30px;
+    border-radius: 0.3rem;
+    background-color: var(--green-900);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
